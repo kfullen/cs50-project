@@ -5,14 +5,15 @@ import { TabNavigator, TabBarBottom } from 'react-navigation';
 
 import Colors from '../constants/Colors';
 
-import HomeScreen from '../screens/HomeScreen';
 import FormScreen from '../screens/FormScreen';
 import SettingsScreen from '../screens/SettingsScreen';
+import EventsScreen from '../screens/EventsScreen';
+
 
 export default TabNavigator(
   {
-    Home: {
-      screen: HomeScreen,
+    Events: {
+      screen: EventsScreen,
     },
     Form: {
       screen: FormScreen,
@@ -27,14 +28,17 @@ export default TabNavigator(
         const { routeName } = navigation.state;
         let iconName;
         switch (routeName) {
-          case 'Home':
+          case 'Events':
             iconName =
               Platform.OS === 'ios'
                 ? `ios-information-circle${focused ? '' : '-outline'}`
                 : 'md-information-circle';
             break;
           case 'Form':
-            iconName = Platform.OS === 'ios' ? `ios-link${focused ? '' : '-outline'}` : 'md-link';
+            iconName =
+              Platform.OS === 'ios'
+                ? `ios-information-circle${focused ? '' : '-outline'}`
+                : 'md-information-circle';
             break;
           case 'Settings':
             iconName =

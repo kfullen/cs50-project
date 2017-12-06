@@ -5,9 +5,12 @@ import { Ionicons } from '@expo/vector-icons';
 import RootNavigation from './navigation/RootNavigation';
 
 export default class App extends React.Component {
-  state = {
-    isLoadingComplete: false,
-  };
+  constructor() {
+    super();
+    this.state = {
+      isLoadingComplete: false,
+    };
+  }
 
   render() {
     if (!this.state.isLoadingComplete && !this.props.skipLoadingScreen) {
