@@ -8,9 +8,9 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "primaryColor": "#cccccc",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/uHUNGRY-Icon.png",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/images/uHUNGRY-Splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
